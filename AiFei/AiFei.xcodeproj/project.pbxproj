@@ -12,6 +12,7 @@
 		58CFC6D31CB818AC00CADD18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CFC6D11CB818AC00CADD18 /* Main.storyboard */; };
 		58CFC6D51CB818AC00CADD18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58CFC6D41CB818AC00CADD18 /* Assets.xcassets */; };
 		58CFC6D81CB818AC00CADD18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CFC6D61CB818AC00CADD18 /* LaunchScreen.storyboard */; };
+		F01C89DE24194B1B162FDE0B /* Pods_AiFei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22D58204756F2F87DB91D6C /* Pods_AiFei.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		58CFC6D41CB818AC00CADD18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58CFC6D71CB818AC00CADD18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58CFC6D91CB818AC00CADD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		902E063109EA1375008435EC /* Pods-AiFei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiFei.release.xcconfig"; path = "Pods/Target Support Files/Pods-AiFei/Pods-AiFei.release.xcconfig"; sourceTree = "<group>"; };
+		A22D58204756F2F87DB91D6C /* Pods_AiFei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AiFei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F490FB30AE92ADE6152BB716 /* Pods-AiFei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AiFei.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AiFei/Pods-AiFei.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F01C89DE24194B1B162FDE0B /* Pods_AiFei.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				58CFC6CC1CB818AC00CADD18 /* AiFei */,
 				58CFC6CB1CB818AC00CADD18 /* Products */,
+				F62F95F631538DE63A87A3FE /* Pods */,
+				8E936C9BE5D83858FE04B448 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = AiFei;
 			sourceTree = "<group>";
 		};
+		8E936C9BE5D83858FE04B448 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A22D58204756F2F87DB91D6C /* Pods_AiFei.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F62F95F631538DE63A87A3FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F490FB30AE92ADE6152BB716 /* Pods-AiFei.debug.xcconfig */,
+				902E063109EA1375008435EC /* Pods-AiFei.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58CFC6DC1CB818AC00CADD18 /* Build configuration list for PBXNativeTarget "AiFei" */;
 			buildPhases = (
+				A8938A12A9FCE7811F2793A3 /* Check Pods Manifest.lock */,
 				58CFC6C61CB818AC00CADD18 /* Sources */,
 				58CFC6C71CB818AC00CADD18 /* Frameworks */,
 				58CFC6C81CB818AC00CADD18 /* Resources */,
+				5A57A4BBAF83D4F0103F80EF /* Embed Pods Frameworks */,
+				07C5E1ACDB1DFC59A8ACBB9E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07C5E1ACDB1DFC59A8ACBB9E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AiFei/Pods-AiFei-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A57A4BBAF83D4F0103F80EF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AiFei/Pods-AiFei-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8938A12A9FCE7811F2793A3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58CFC6C61CB818AC00CADD18 /* Sources */ = {
@@ -248,6 +323,7 @@
 		};
 		58CFC6DD1CB818AC00CADD18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F490FB30AE92ADE6152BB716 /* Pods-AiFei.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AiFei/Info.plist;
@@ -259,6 +335,7 @@
 		};
 		58CFC6DE1CB818AC00CADD18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 902E063109EA1375008435EC /* Pods-AiFei.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AiFei/Info.plist;
@@ -287,6 +364,7 @@
 				58CFC6DE1CB818AC00CADD18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
