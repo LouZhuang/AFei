@@ -10,6 +10,11 @@
 		58172CF11CC50DD50083925B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58172CED1CC50DD50083925B /* AppDelegate.swift */; };
 		58172CF21CC50DD50083925B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58172CEF1CC50DD50083925B /* ViewController.swift */; };
 		58172CF51CC50FFA0083925B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58172CF41CC50FFA0083925B /* MainViewController.swift */; };
+		58172CFD1CC511A20083925B /* RooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58172CFC1CC511A20083925B /* RooterViewController.swift */; };
+		58172CFF1CC5172D0083925B /* IPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58172CFE1CC5172D0083925B /* IPlayViewController.swift */; };
+		58172D011CC517490083925B /* FShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58172D001CC517490083925B /* FShareViewController.swift */; };
+		58172D031CC5175B0083925B /* EStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58172D021CC5175B0083925B /* EStoryViewController.swift */; };
+		58172D051CC5176A0083925B /* RMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58172D041CC5176A0083925B /* RMeViewController.swift */; };
 		58CFC6D31CB818AC00CADD18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CFC6D11CB818AC00CADD18 /* Main.storyboard */; };
 		58CFC6D51CB818AC00CADD18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58CFC6D41CB818AC00CADD18 /* Assets.xcassets */; };
 		58CFC6D81CB818AC00CADD18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CFC6D61CB818AC00CADD18 /* LaunchScreen.storyboard */; };
@@ -20,6 +25,11 @@
 		58172CED1CC50DD50083925B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58172CEF1CC50DD50083925B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../View/ViewController.swift; sourceTree = "<group>"; };
 		58172CF41CC50FFA0083925B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
+		58172CFC1CC511A20083925B /* RooterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RooterViewController.swift; sourceTree = "<group>"; };
+		58172CFE1CC5172D0083925B /* IPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPlayViewController.swift; sourceTree = "<group>"; };
+		58172D001CC517490083925B /* FShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FShareViewController.swift; sourceTree = "<group>"; };
+		58172D021CC5175B0083925B /* EStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EStoryViewController.swift; sourceTree = "<group>"; };
+		58172D041CC5176A0083925B /* RMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMeViewController.swift; sourceTree = "<group>"; };
 		58CFC6CA1CB818AC00CADD18 /* AiFei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiFei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CFC6D21CB818AC00CADD18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58CFC6D41CB818AC00CADD18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,9 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				58172CF71CC5113F0083925B /* AMain */,
-				58172CF81CC5113F0083925B /* EStory */,
-				58172CF91CC5113F0083925B /* FShare */,
 				58172CFA1CC5113F0083925B /* IPlay */,
+				58172CF91CC5113F0083925B /* FShare */,
+				58172CF81CC5113F0083925B /* EStory */,
 				58172CFB1CC5113F0083925B /* RMe */,
 				58172CEF1CC50DD50083925B /* ViewController.swift */,
 			);
@@ -102,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				58172CF41CC50FFA0083925B /* MainViewController.swift */,
+				58172CFC1CC511A20083925B /* RooterViewController.swift */,
 			);
 			path = AMain;
 			sourceTree = "<group>";
@@ -109,6 +120,7 @@
 		58172CF81CC5113F0083925B /* EStory */ = {
 			isa = PBXGroup;
 			children = (
+				58172D021CC5175B0083925B /* EStoryViewController.swift */,
 			);
 			path = EStory;
 			sourceTree = "<group>";
@@ -116,6 +128,7 @@
 		58172CF91CC5113F0083925B /* FShare */ = {
 			isa = PBXGroup;
 			children = (
+				58172D001CC517490083925B /* FShareViewController.swift */,
 			);
 			path = FShare;
 			sourceTree = "<group>";
@@ -123,6 +136,7 @@
 		58172CFA1CC5113F0083925B /* IPlay */ = {
 			isa = PBXGroup;
 			children = (
+				58172CFE1CC5172D0083925B /* IPlayViewController.swift */,
 			);
 			path = IPlay;
 			sourceTree = "<group>";
@@ -130,6 +144,7 @@
 		58172CFB1CC5113F0083925B /* RMe */ = {
 			isa = PBXGroup;
 			children = (
+				58172D041CC5176A0083925B /* RMeViewController.swift */,
 			);
 			path = RMe;
 			sourceTree = "<group>";
@@ -307,6 +322,11 @@
 				58172CF51CC50FFA0083925B /* MainViewController.swift in Sources */,
 				58172CF21CC50DD50083925B /* ViewController.swift in Sources */,
 				58172CF11CC50DD50083925B /* AppDelegate.swift in Sources */,
+				58172D011CC517490083925B /* FShareViewController.swift in Sources */,
+				58172CFD1CC511A20083925B /* RooterViewController.swift in Sources */,
+				58172D051CC5176A0083925B /* RMeViewController.swift in Sources */,
+				58172D031CC5175B0083925B /* EStoryViewController.swift in Sources */,
+				58172CFF1CC5172D0083925B /* IPlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
